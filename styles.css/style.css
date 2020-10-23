@@ -1,0 +1,130 @@
+*{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Commissioner', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4e5450;
+    
+}
+nav ul{
+    margin-top: 2rem;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+header p{
+    font-family: 'Dancing Script', cursive;
+    padding: 0.5rem;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+.view{
+    background-color: #4e5450;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.view h1{
+    color: white;
+    margin-top: -3rem;
+    word-spacing: 4px;
+    margin-left: 2rem;
+    text-transform: uppercase;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+#about > div{
+    width: 95%;
+    padding: 1rem;
+    margin: 1rem auto;
+    border: 1px solid  #4e5450;
+    border-radius: 8px;
+}
+
+#about div h2{
+    text-align: center;
+}
+
+#contact{
+    background-color: #4e5450;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.fab .fas{
+    margin-right: 1rem;
+}
+
+
+@media screen and (min-width: 1000px){
+    header p{
+        margin-left: 2rem;
+    }
+
+    nav ul{
+    margin-right: 4rem;
+    }
+
+    nav ul li {
+    
+    margin-right: 2rem;
+ }
+
+    #about{
+
+        flex-direction: row;
+        
+    }
+
+    #about > div{
+        margin-right: 2rem;
+    }
+
+
+    #contact{
+        flex-direction: row;
+        padding: 1rem 0;
+        justify-content: space-around;
+        /* align-items: ; */
+    }
+
+    #contact div{
+
+    }
+
+}
